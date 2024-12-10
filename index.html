@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Todo List</h1>
+        <ul>
+            <li><a href="#tasks" id="tasksButton">Tasks</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="task-section">
+            <input type="text" placeholder="Enter task" id="taskDescription">
+            <input type="button" value="Add Task" onclick="addTask()">
+        </section>
+
+        <section id="displayTask"></section>
+
+        
+        <div id="tasksMenu" class="menu-dropdown">
+            <div class="menu-section">
+                <h3>Task Management</h3>
+                <div class="menu-options">
+                    <!-- Task Filtering -->
+                    <div class="filter-section" >
+                        <h4>Filter Tasks</h4>
+                        <select name="Filter" id="filter" onchange="filterTasks()">
+                            <option value="">Select Option</option>
+                            <option value="allTasks">All Tasks</option>
+                            <option value="pendingTasks">Pending Tasks</option>
+                            <option value="completedTasks">Completed Tasks</option>
+                        </select>
+                    </div>
+                
+                    <!-- Bulk Actions -->
+                    <div class="bulk-actions">
+                        <h4>Bulk Actions</h4>
+                        <button onclick="completeAllPendingTasks()">Complete All Tasks</button>
+                        <button onclick="deleteAllCompletedTasks()">Clear Completed</button>
+                    </div>
+        
+                    <!-- Task Statistics -->
+                    <div class="task-stats">
+                        <h4>Task Statistics</h4>
+                        <div class="stat-item">
+                            <span>Total Tasks:</span>
+                            <span id="totalTaskCount">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Completed Tasks:</span>
+                            <span id="completedTaskCount">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Pending Tasks:</span>
+                            <span id="pendingTaskCount">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Todo List App | <a href="https://github.com/AnishBandal">Anish Bandal</a></p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
