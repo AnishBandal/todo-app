@@ -114,23 +114,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
  🔗 Links
 
 - 🌐 [Live Demo](https://todo-app-anish-bandal.vercel.app/index.html)
-- 🐛 [Report a Bug](https://github.com/AnishBandal/todo-app/issues/new?template=bug_report.md)
-- 💡 [Request a Feature](https://github.com/AnishBandal/todo-app/issues/new?template=feature_request.md)
 
  📊 Project Status
  
 ![image](https://github.com/user-attachments/assets/ad3fd490-999b-4bed-a3b9-e4a9ed1a5724)
+
 ![image](https://github.com/user-attachments/assets/2e868fb0-3052-4828-85fb-200d7c533b11)
+
 ![image](https://github.com/user-attachments/assets/66c298c1-86f5-46cd-b6dd-4beb4b91b8e6)
 
  🤝 Support
 
 If you like this project, please give it a ⭐ and share it with friends!
-
- 🐛 Bug Reports & Feature Requests
-
-- Found a bug? Please fill out our [Bug Report Template](https://github.com/AnishBandal/todo-app/issues/new?template=bug_report.md).
-- Have a feature idea? Use our [Feature Request Template](https://github.com/AnishBandal/todo-app/issues/new?template=feature_request.md).
 
  📱 Contact
 
