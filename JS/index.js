@@ -176,15 +176,23 @@ function deleteAllCompletedTasks(){
   refreshData();
 }
 
-function updateStats(){
+function updateStats() {
   let totalTaskSpan = document.getElementById("totalTaskCount");
   let pendingTaskSpan = document.getElementById("pendingTaskCount");
   let completedTaskSpan = document.getElementById("completedTaskCount");
+  let completionPercentageSpan = document.getElementById("completionPercentage"); 
 
-  totalTaskSpan.innerText = tasksArr.length;
-  pendingTaskSpan.innerText = tasksArr.filter(task => task.status === "pending").length;
-  completedTaskSpan.innerText = tasksArr.filter(task => task.status === "completed").length;
+  let totalTasks = tasksArr.length;
+  let pendingTasks = tasksArr.filter(task => task.status === "pending").length;
+  let completedTasks = tasksArr.filter(task => task.status === "completed").length;
+  let completionPercentage = totalTasks > 0 ? ((completedTasks / totalTasks) * 100).toFixed(2) : 0;
+
+  totalTaskSpan.innerText = totalTasks;
+  pendingTaskSpan.innerText = pendingTasks;
+  completedTaskSpan.innerText = completedTasks;
+  completionPercentageSpan.innerText = `${completionPercentage}%`; 
 }
+
 
 
 // Initialize the task list on page load
